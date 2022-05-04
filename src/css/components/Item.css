@@ -1,0 +1,44 @@
+.items {
+	margin: 40px 0px 0px 0px;
+}
+.item__names {
+	display: flex;
+	margin: 0px 0px 20px 0px;
+	justify-content: space-between;
+}
+.item__name {
+	flex: 1 1 25%;
+}
+.items__item {
+	margin: 0px 0px 20px 0px;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+.items__info {
+	flex: 1 1 25%;
+	display: flex;
+}
+.items__image {
+	width: 50px;
+	height: 50px;
+	background: #e7d7d7;
+	margin: 0px 10px 0px 0px;
+}
+.items__count {
+	display: flex;
+	align-items: center;
+	flex: 1 1 25%;
+	gap: 4px;
+}
+.items__button {
+	width: 20px;
+	height: 20px;
+	background: #d3c6c6;
+}
+.items__price {
+	flex: 1 1 25%;
+}
+.items__total-price {
+	flex: 1 1 25%;
+}
