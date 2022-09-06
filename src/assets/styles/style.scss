@@ -1,0 +1,67 @@
+/* Подключение шрифтов ======================================================================= */
+// &display=swap - поддержка кирилицы
+
+/* Подключение файлом */
+//(если есть)
+@import "./fonts";
+
+// Шрифт по умолчанию =======================================================================//
+$fontFamily: "Fira code";
+
+// Настройки ================================================================================//
+$container: 1440;
+$paddingContainer: 15;
+
+/* Обнуление ================================================================================ */
+@import "./null";
+
+/* Тело страницы ============================================================================= */
+body {
+	font-family: $fontFamily;
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
+
+/* Оболочка ================================================================================== */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+	padding: 20px 40px;
+}
+
+/* Прижатие футера к низу*/
+.wrapper > main {
+	flex: 1 1 auto;
+}
+
+/* Контейнер ================================================================================= */
+[class*="__container"] {
+	max-width: $container + $paddingContainer * 2 + px;
+	margin: 0 auto;
+	padding: 0 $paddingContainer + px;
+}
+
+:root {
+	--primaryColor: #2578ed;
+	--secondaryColor: #e6e9ec;
+	--textColor: #0d263b;
+}
+
+.container {
+	align-items: center;
+	display: flex;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+hr {
+	margin: 30px 0;
+	border: 1px solid var(--primaryColor);
+}
